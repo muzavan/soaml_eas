@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Masyarakat" version="4">
   <OBJECT>
     <ID name="Masyarakat" mc="Standard.Class" uid="2b77899b-5fee-4345-afbb-5baed8a0f1bb"/>
-    <PID name="20151010" mc="Standard.Package" uid="812773ad-0ac3-49d3-a7d1-e0bc40b02d04"/>
+    <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -45,6 +45,9 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+            <LINK relation="Base">
+              <ID name="~ArchiveViewerInterface" mc="Standard.Class" uid="ebb1b3e7-5a39-494e-99ff-d67d546db5d1"/>
+            </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="Request" mc="Standard.Stereotype" uid="01ec25d4-0000-16bd-0000-000000000000"/>
             </LINK>

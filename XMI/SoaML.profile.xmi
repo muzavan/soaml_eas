@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_bVIEIG9wEeW_YbwgB8Gudg" name="SoaML" metaclassReference="_bVIEMG9wEeW_YbwgB8Gudg _bVIEMW9wEeW_YbwgB8Gudg">
+  <eAnnotations xmi:id="_bVIEIW9wEeW_YbwgB8Gudg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_bVIEIm9wEeW_YbwgB8Gudg" name="Module">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_bVIEI29wEeW_YbwgB8Gudg" value="4671fd99-8848-11df-a5a6-0014224f9977"/>
+    </contents>
+    <contents xmi:type="uml:Property" xmi:id="_bVIEJG9wEeW_YbwgB8Gudg" name="ID">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_bVIEJW9wEeW_YbwgB8Gudg" value="01ec25d4-0000-15fb-0000-000000000000"/>
+    </contents>
+  </eAnnotations>
+  <eAnnotations xmi:id="_bVIEJm9wEeW_YbwgB8Gudg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_bVIEJ29wEeW_YbwgB8Gudg" name="SoaML" nsURI="http:///schemas/SoaML/_bUJzyG9wEeW_YbwgB8Gudg/0" nsPrefix="SoaML">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_bVIEKG9wEeW_YbwgB8Gudg" name="Agent">
+        <eAnnotations xmi:id="_bVIEKW9wEeW_YbwgB8Gudg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_bVIEMm9wEeW_YbwgB8Gudg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_bVIEKm9wEeW_YbwgB8Gudg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_bVIELG9wEeW_YbwgB8Gudg" name="Attachment">
+        <eAnnotations xmi:id="_bVIELW9wEeW_YbwgB8Gudg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_bVIEO29wEeW_YbwgB8Gudg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_bVIELm9wEeW_YbwgB8Gudg" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_bVIEMG9wEeW_YbwgB8Gudg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <elementImport xmi:id="_bVIEMW9wEeW_YbwgB8Gudg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_bVIEMm9wEeW_YbwgB8Gudg" name="Agent">
+    <eAnnotations xmi:id="_bVIEM29wEeW_YbwgB8Gudg" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_bVIENG9wEeW_YbwgB8Gudg" name="ID">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_bVIENW9wEeW_YbwgB8Gudg" value="01ec25d4-0000-1604-0000-000000000000"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_bVIENm9wEeW_YbwgB8Gudg" name="base_Class" association="_bVIEOW9wEeW_YbwgB8Gudg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+    <icon xmi:id="_bVIEN29wEeW_YbwgB8Gudg" content="-77 50 4e 47 d a 1a a 0 0 0 d 49 48 44 52 0 0 0 10 0 0 0 10 8 3 0 0 0 28 2d f 53 0 0 0 60 50 4c 54 45 18 25 c 1a 28 d 1c 2b e 1e 2e f 7b -47 3e 70 -57 38 4e 75 27 50 79 28 -54 -2b -7e 19 27 c -3e -20 -5c -19 -d -24 6a -61 35 37 53 1b 3b 59 1e 47 6b 23 2d 43 16 2f 47 17 -70 -39 59 -5c -2f 76 -57 -2c 7f 31 4b 18 7e -43 3f 7f -42 3f -7b -3f 48 23 35 11 27 3b 13 5b -77 2e 29 3d 14 27 3a 13 5f -71 2f 63 -6c 31 45 10 -2b -21 0 0 0 69 49 44 41 54 78 5e 5d -33 55 a 4 41 c 45 -2f -69 -5c -56 -23 65 5c -a -41 -35 -7a 8 -3d -c -3 3c -44 10 -4c 1a -69 -43 -30 -24 34 55 65 -50 33 40 -40 33 -20 2 6b a 10 78 a 5b 7a -1f f 46 21 72 10 3f 29 50 -45 -24 -6d -3e 17 31 49 -4a 58 63 -80 -1e -c -1b 11 6f -21 -54 20 -49 -80 c -7d -55 43 66 -7d -66 -79 6e 41 -5 21 -4 22 41 7c -78 11 -32 1d 4b -10 5 46 2c -7d -55 -5b 0 0 0 0 49 45 4e 44 -52 42 60 -7e " location="C:\Users\Toshiba\.modelio\3.4\modules\f9908b7e330028ee0c45e23e1ee2b92eb419c1b0\SoaMLDesigner\res\bmp\agent.png" format="png"/>
+    <icon xmi:id="_bVIEOG9wEeW_YbwgB8Gudg" content="-77 50 4e 47 d a 1a a 0 0 0 d 49 48 44 52 0 0 0 10 0 0 0 10 8 3 0 0 0 28 2d f 53 0 0 0 60 50 4c 54 45 18 25 c 1a 28 d 1c 2b e 1e 2e f 7b -47 3e 70 -57 38 4e 75 27 50 79 28 -54 -2b -7e 19 27 c -3e -20 -5c -19 -d -24 6a -61 35 37 53 1b 3b 59 1e 47 6b 23 2d 43 16 2f 47 17 -70 -39 59 -5c -2f 76 -57 -2c 7f 31 4b 18 7e -43 3f 7f -42 3f -7b -3f 48 23 35 11 27 3b 13 5b -77 2e 29 3d 14 27 3a 13 5f -71 2f 63 -6c 31 45 10 -2b -21 0 0 0 69 49 44 41 54 78 5e 5d -33 55 a 4 41 c 45 -2f -69 -5c -56 -23 65 5c -a -41 -35 -7a 8 -3d -c -3 3c -44 10 -4c 1a -69 -43 -30 -24 34 55 65 -50 33 40 -40 33 -20 2 6b a 10 78 a 5b 7a -1f f 46 21 72 10 3f 29 50 -45 -24 -6d -3e 17 31 49 -4a 58 63 -80 -1e -c -1b 11 6f -21 -54 20 -49 -80 c -7d -55 43 66 -7d -66 -79 6e 41 -5 21 -4 22 41 7c -78 11 -32 1d 4b -10 5 46 2c -7d -55 -5b 0 0 0 0 49 45 4e 44 -52 42 60 -7e " location="C:\Users\Toshiba\.modelio\3.4\modules\f9908b7e330028ee0c45e23e1ee2b92eb419c1b0\SoaMLDesigner\res\bmp\agent.png" format="png"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_bVIEOW9wEeW_YbwgB8Gudg" name="Class_Agent" memberEnd="_bVIEOm9wEeW_YbwgB8Gudg _bVIENm9wEeW_YbwgB8Gudg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_bVIEOm9wEeW_YbwgB8Gudg" name="extension_Agent" type="_bVIEMm9wEeW_YbwgB8Gudg" aggregation="composite" association="_bVIEOW9wEeW_YbwgB8Gudg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_bVIEO29wEeW_YbwgB8Gudg" name="Attachment">
+    <eAnnotations xmi:id="_bVIEPG9wEeW_YbwgB8Gudg" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_bVIrMG9wEeW_YbwgB8Gudg" name="ID">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_bVIrMW9wEeW_YbwgB8Gudg" value="01ec25d4-0000-160a-0000-000000000000"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_bVIrMm9wEeW_YbwgB8Gudg" name="base_Property" association="_bVIrNW9wEeW_YbwgB8Gudg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+    <icon xmi:id="_bVIrM29wEeW_YbwgB8Gudg" content="-77 50 4e 47 d a 1a a 0 0 0 d 49 48 44 52 0 0 0 10 0 0 0 10 4 3 0 0 0 -13 -23 -1e 52 0 0 0 12 50 4c 54 45 0 0 0 75 -75 -44 76 -74 -44 -65 -56 -31 -47 -3d -23 -1c -18 -e 63 -3 -25 2d 0 0 0 1 74 52 4e 53 0 40 -1a -28 66 0 0 0 42 49 44 41 54 8 5b 63 60 -40 0 4c -7e 42 4a 4a -76 4a a c -74 -5f 60 -60 c 62 -48 0 1 2a 23 34 -3c 15 2c -1b -1e a 66 30 -7b -7c -7a 40 18 40 25 68 22 21 30 11 -68 -7f 4c -7e 20 -60 -5c -34 -40 60 c 1 70 -35 1 17 34 16 -31 7c -3c -12 -48 0 0 0 0 49 45 4e 44 -52 42 60 -7e " location="C:\Users\Toshiba\.modelio\3.4\modules\f9908b7e330028ee0c45e23e1ee2b92eb419c1b0\SoaMLDesigner\res\bmp\attachment.png" format="png"/>
+    <icon xmi:id="_bVIrNG9wEeW_YbwgB8Gudg" content="-77 50 4e 47 d a 1a a 0 0 0 d 49 48 44 52 0 0 0 10 0 0 0 10 4 3 0 0 0 -13 -23 -1e 52 0 0 0 12 50 4c 54 45 0 0 0 75 -75 -44 76 -74 -44 -65 -56 -31 -47 -3d -23 -1c -18 -e 63 -3 -25 2d 0 0 0 1 74 52 4e 53 0 40 -1a -28 66 0 0 0 42 49 44 41 54 8 5b 63 60 -40 0 4c -7e 42 4a 4a -76 4a a c -74 -5f 60 -60 c 62 -48 0 1 2a 23 34 -3c 15 2c -1b -1e a 66 30 -7b -7c -7a 40 18 40 25 68 22 21 30 11 -68 -7f 4c -7e 20 -60 -5c -34 -40 60 c 1 70 -35 1 17 34 16 -31 7c -3c -12 -48 0 0 0 0 49 45 4e 44 -52 42 60 -7e " location="C:\Users\Toshiba\.modelio\3.4\modules\f9908b7e330028ee0c45e23e1ee2b92eb419c1b0\SoaMLDesigner\res\bmp\attachment.png" format="png"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_bVIrNW9wEeW_YbwgB8Gudg" name="Property_Attachment" memberEnd="_bVIrNm9wEeW_YbwgB8Gudg _bVIrMm9wEeW_YbwgB8Gudg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_bVIrNm9wEeW_YbwgB8Gudg" name="extension_Attachment" type="_bVIEO29wEeW_YbwgB8Gudg" aggregation="composite" association="_bVIrNW9wEeW_YbwgB8Gudg"/>
+  </packagedElement>
+</uml:Profile>

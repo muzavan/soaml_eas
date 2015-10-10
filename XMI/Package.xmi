@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_bUJzwG9wEeW_YbwgB8Gudg" name="Package">
+  <eAnnotations xmi:id="_bUJzwW9wEeW_YbwgB8Gudg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_bUJzwm9wEeW_YbwgB8Gudg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_bUJzw29wEeW_YbwgB8Gudg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_bUJzxG9wEeW_YbwgB8Gudg" name="Role">
+    <ownedLiteral xmi:id="_bUJzxW9wEeW_YbwgB8Gudg" name="Dinas">
+      <ownedComment xmi:id="_bUJzxm9wEeW_YbwgB8Gudg">
+        <body>&lt;p>Dinas yang dimaksud seharusnya diisi dengan dinas-dinas yang akan menggunakan &lt;em>service&lt;/em> ini. &lt;em>Saat ini, kami belum menentukan batasannya&lt;/em>.&lt;/p>&lt;p>&amp;nbsp;&lt;/p>
+</body>
+      </ownedComment>
+    </ownedLiteral>
+    <ownedLiteral xmi:id="_bUJzx29wEeW_YbwgB8Gudg" name="Masyarakat"/>
+  </packagedElement>
+  <profileApplication xmi:id="_bVR1IG9wEeW_YbwgB8Gudg">
+    <eAnnotations xmi:id="_bVScMG9wEeW_YbwgB8Gudg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="SoaML.profile.xmi#_bVIEJ29wEeW_YbwgB8Gudg"/>
+    </eAnnotations>
+    <appliedProfile href="SoaML.profile.xmi#_bVIEIG9wEeW_YbwgB8Gudg"/>
+  </profileApplication>
+</uml:Model>
