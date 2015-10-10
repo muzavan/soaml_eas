@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ElectronicArchiveSystem" version="4">
+  <OBJECT>
+    <ID name="ElectronicArchiveSystem" mc="Standard.Project" uid="f13ef973-806a-4aa2-8b2f-4ca6af0c7590"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[ElectronicArchiveSystem]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="ElectronicArchiveSystem" mc="Standard.DiagramSet" uid="f02ade0d-039e-469c-af39-73d2f8534e79"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

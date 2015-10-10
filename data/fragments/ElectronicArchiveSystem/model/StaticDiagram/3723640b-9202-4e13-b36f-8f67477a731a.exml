@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Services Architecture diagram" version="4">
+  <OBJECT>
+    <ID name="Services Architecture diagram" mc="Standard.StaticDiagram" uid="3723640b-9202-4e13-b36f-8f67477a731a"/>
+    <PID name="20151010" mc="Standard.Package" uid="812773ad-0ac3-49d3-a7d1-e0bc40b02d04"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">583</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Services Architecture diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="ServiceArchitectureDiagram" mc="Standard.Stereotype" uid="0208014c-0000-34f7-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="12a233c7-9a1a-449d-be6a-e25a1d9f552c"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[This diagram is dedicated to the Services Architecture collaboration modeling including its internals. ]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

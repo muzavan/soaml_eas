@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="electronicarchivesystem" version="4">
+  <OBJECT>
+    <ID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
+    <PID name="ElectronicArchiveSystem" mc="Standard.Project" uid="f13ef973-806a-4aa2-8b2f-4ca6af0c7590"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[electronicarchivesystem]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="service" mc="Standard.Package" uid="a48f850b-b0c2-45e4-b49d-a993194694ee"/>
+        <COMPID name="20151010" mc="Standard.Package" uid="812773ad-0ac3-49d3-a7d1-e0bc40b02d04"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
