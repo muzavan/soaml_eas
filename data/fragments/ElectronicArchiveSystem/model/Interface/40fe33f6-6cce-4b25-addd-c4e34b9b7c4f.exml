@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ArchiveViewer" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ArchiveManagement" version="4">
   <OBJECT>
-    <ID name="ArchiveViewer" mc="Standard.Interface" uid="f39377f1-8bec-48b5-8711-bc60ab431f18"/>
+    <ID name="ArchiveManagement" mc="Standard.Interface" uid="40fe33f6-6cce-4b25-addd-c4e34b9b7c4f"/>
     <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,13 +9,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[ArchiveViewer]]></ATT>
+      <ATT name="Name"><![CDATA[ArchiveManagement]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="view" mc="Standard.Operation" uid="c9dcc2ca-2e2a-493f-be02-81f064b18d2d"/>
+          <ID name="receiveUpdate" mc="Standard.Operation" uid="8caf9721-8397-4a85-97a6-26307a3146b4"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -23,13 +23,13 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[view]]></ATT>
+            <ATT name="Name"><![CDATA[receiveUpdate]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="IO">
               <OBJECT>
-                <ID name="id" mc="Standard.Parameter" uid="d5528771-f79e-4656-865f-eb2edd431a9b"/>
+                <ID name="in" mc="Standard.Parameter" uid="32617df6-7f08-47ff-9f9b-f604f7105d96"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -41,31 +41,7 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[id]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <COMP relation="Return">
-              <OBJECT>
-                <ID name="" mc="Standard.Parameter" uid="2a6b7f7a-8a03-4ed7-a286-4902404e8e24"/>
-                <ATTRIBUTES>
-                  <ATT name="ParameterPassing">In</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="DefaultValue"></ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="IsException">false</ATT>
-                  <ATT name="IsStream">false</ATT>
-                  <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[in]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -78,7 +54,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="search" mc="Standard.Operation" uid="8aaa1a04-1b26-4e9d-9c95-42a782a20b6b"/>
+          <ID name="publish" mc="Standard.Operation" uid="47d6386f-6c0c-4e64-8815-f0ff84f25e62"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -86,13 +62,13 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[search]]></ATT>
+            <ATT name="Name"><![CDATA[publish]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="IO">
               <OBJECT>
-                <ID name="keyword" mc="Standard.Parameter" uid="fbf8516f-3247-4720-a127-2e726cb2e0dd"/>
+                <ID name="in" mc="Standard.Parameter" uid="94d70021-a081-46be-90bb-a0f0aea3184b"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -104,19 +80,34 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[keyword]]></ATT>
+                  <ATT name="Name"><![CDATA[in]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                    <ID name="Archive" mc="Standard.Class" uid="30ab9d6a-2a58-433f-a660-c17476eb9b11"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="listPendingArchives" mc="Standard.Operation" uid="a7453c46-bc2e-481e-8487-2d0bf6bc307c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[listPendingArchives]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
             <COMP relation="Return">
               <OBJECT>
-                <ID name="" mc="Standard.Parameter" uid="c9015b41-8ca7-46ee-a117-038a535eed0d"/>
+                <ID name="" mc="Standard.Parameter" uid="2a0fbc18-1484-4197-b7c7-376a35efcb76"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
@@ -142,7 +133,7 @@
         </OBJECT>
       </COMP>
       <LINK relation="Extension">
-        <FOREIGNID name="Provider_Interface" mc="Standard.Stereotype" uid="e61adf27-2518-11df-9d5e-001302895b2b"/>
+        <FOREIGNID name="Consumer_Interface" mc="Standard.Stereotype" uid="d701f546-2518-11df-9d5e-001302895b2b"/>
       </LINK>
     </DEPENDENCIES>
   </OBJECT>

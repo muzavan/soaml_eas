@@ -14,16 +14,16 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="ArchiveManager" mc="Standard.Interface" uid="e2d50681-c6f6-4b8f-ba0d-8de5a17ec548"/>
-        <COMPID name="ArchiveViewManager" mc="Standard.Interface" uid="f39377f1-8bec-48b5-8711-bc60ab431f18"/>
-        <COMPID name="ArchiveManagerCaller" mc="Standard.Interface" uid="ad86f013-bd11-4639-bdc4-4f8ac854b553"/>
+        <COMPID name="ArchiveSupplier" mc="Standard.Interface" uid="e2d50681-c6f6-4b8f-ba0d-8de5a17ec548"/>
+        <COMPID name="ArchiveViewer" mc="Standard.Interface" uid="f39377f1-8bec-48b5-8711-bc60ab431f18"/>
+        <COMPID name="ArchiveReceiver" mc="Standard.Interface" uid="ad86f013-bd11-4639-bdc4-4f8ac854b553"/>
         <COMPID name="Sistem" mc="Standard.Class" uid="9c6df024-0f9d-4c57-a7e3-f584dc4973cb"/>
         <COMPID name="Masyarakat" mc="Standard.Class" uid="2b77899b-5fee-4345-afbb-5baed8a0f1bb"/>
         <COMPID name="Managing Archive" mc="Standard.Class" uid="6190227a-60de-42fd-a7f6-77174c28796d"/>
         <COMPID name="Dinas" mc="Standard.Class" uid="e7451148-e012-47a2-8916-0722585d5093"/>
         <COMPID name="Archive" mc="Standard.Class" uid="30ab9d6a-2a58-433f-a660-c17476eb9b11"/>
-        <COMPID name="ArchiveManagerInterface" mc="Standard.Class" uid="9d953c40-fddb-4ab0-adc4-963f084d86fb"/>
-        <COMPID name="~ArchiveManagerInterface" mc="Standard.Class" uid="508b3f4b-1409-4abd-8ec9-d4296f0a71c4"/>
+        <COMPID name="~ArchiveSupplierInterface" mc="Standard.Class" uid="9d953c40-fddb-4ab0-adc4-963f084d86fb"/>
+        <COMPID name="ArchiveSupplierInterface" mc="Standard.Class" uid="508b3f4b-1409-4abd-8ec9-d4296f0a71c4"/>
         <COMPID name="ArchiveViewerInterface" mc="Standard.Class" uid="0535d8c0-5ebf-416a-be5d-08f9c9b3871d"/>
         <COMPID name="~ArchiveViewerInterface" mc="Standard.Class" uid="ebb1b3e7-5a39-494e-99ff-d67d546db5d1"/>
         <OBJECT>
@@ -94,15 +94,15 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="manage" mc="Standard.CollaborationUse" uid="fa948b88-0637-4196-aec3-b8a75bd7cea4"/>
+                <ID name="supply" mc="Standard.CollaborationUse" uid="fa948b88-0637-4196-aec3-b8a75bd7cea4"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[manage]]></ATT>
+                  <ATT name="Name"><![CDATA[supply]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
                     <REFOBJ>
-                      <ID name="Manage Archive" mc="Standard.Collaboration" uid="76c249e8-246d-49f4-a515-73d6700582af"/>
+                      <ID name="Supply Archive" mc="Standard.Collaboration" uid="76c249e8-246d-49f4-a515-73d6700582af"/>
                     </REFOBJ>
                   </LINK>
                   <COMP relation="RoleBinding">
@@ -115,7 +115,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Role">
                           <REFOBJ>
-                            <ID name="consumer" mc="Standard.BindableInstance" uid="b734e0d7-7af5-401a-8841-97508c469e63"/>
+                            <ID name="supplier" mc="Standard.BindableInstance" uid="b734e0d7-7af5-401a-8841-97508c469e63"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="RepresentedFeature">
@@ -134,12 +134,66 @@
                       <DEPENDENCIES>
                         <LINK relation="Role">
                           <REFOBJ>
-                            <ID name="provider" mc="Standard.BindableInstance" uid="af0a4569-ec93-4d6a-842f-2837581ea725"/>
+                            <ID name="consumer" mc="Standard.BindableInstance" uid="af0a4569-ec93-4d6a-842f-2837581ea725"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="RepresentedFeature">
                           <REFOBJ>
                             <ID name="sistem" mc="Standard.BindableInstance" uid="1ac57a69-4bac-4ff5-97eb-85cb931affea"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="manage" mc="Standard.CollaborationUse" uid="ce5ba42d-5dbd-4b0d-9b8f-47421f2080b5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[manage]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <REFOBJ>
+                      <ID name="Supply Archive" mc="Standard.Collaboration" uid="76c249e8-246d-49f4-a515-73d6700582af"/>
+                    </REFOBJ>
+                  </LINK>
+                  <COMP relation="RoleBinding">
+                    <OBJECT>
+                      <ID name="Binding" mc="Standard.Binding" uid="767e0142-f398-495b-a3d5-c6e477d4ff23"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[Binding]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Role">
+                          <REFOBJ>
+                            <ID name="consumer" mc="Standard.BindableInstance" uid="d11099f4-8fa2-45aa-9b46-460ec7cf2213"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="sistem" mc="Standard.BindableInstance" uid="1ac57a69-4bac-4ff5-97eb-85cb931affea"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Binding" mc="Standard.Binding" uid="ce0d8120-23cf-4b5a-8d20-b71de519933b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[Binding]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Role">
+                          <REFOBJ>
+                            <ID name="manager" mc="Standard.BindableInstance" uid="e3dbeb89-6ba3-43fc-8552-6653ac6d18cf"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="RepresentedFeature">
+                          <REFOBJ>
+                            <ID name="archivist" mc="Standard.BindableInstance" uid="fdc092e2-daa9-422e-813a-2eec7bc1e498"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -197,6 +251,22 @@
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="archivist" mc="Standard.BindableInstance" uid="fdc092e2-daa9-422e-813a-2eec7bc1e498"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[archivist]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Archivist" mc="Standard.Class" uid="9d4c9bcf-ee36-49af-a88e-ebd725466c9b"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
             </COMP>
             <LINK relation="Extension">
               <FOREIGNID name="ServicesArchitecture" mc="Standard.Stereotype" uid="01ec25d4-0000-16c2-0000-000000000000"/>
@@ -204,26 +274,26 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Manage Archive" mc="Standard.Collaboration" uid="76c249e8-246d-49f4-a515-73d6700582af"/>
+          <ID name="Supply Archive" mc="Standard.Collaboration" uid="76c249e8-246d-49f4-a515-73d6700582af"/>
           <ATTRIBUTES>
             <ATT name="IsConcurrent">false</ATT>
             <ATT name="IsAbstract">false</ATT>
             <ATT name="IsLeaf">false</ATT>
             <ATT name="IsRoot">false</ATT>
             <ATT name="Visibility">Public</ATT>
-            <ATT name="Name"><![CDATA[Manage Archive]]></ATT>
+            <ATT name="Name"><![CDATA[Supply Archive]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="Declared">
               <OBJECT>
-                <ID name="consumer" mc="Standard.BindableInstance" uid="b734e0d7-7af5-401a-8841-97508c469e63"/>
+                <ID name="supplier" mc="Standard.BindableInstance" uid="b734e0d7-7af5-401a-8841-97508c469e63"/>
                 <ATTRIBUTES>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[consumer]]></ATT>
+                  <ATT name="Name"><![CDATA[supplier]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -241,9 +311,9 @@
                       <DEPENDENCIES>
                         <COMP relation="Link">
                           <OBJECT>
-                            <ID name="manage" mc="Standard.Link" uid="2f2597f8-0a18-412a-8479-cdbb1da8a900"/>
+                            <ID name="supply" mc="Standard.Link" uid="2f2597f8-0a18-412a-8479-cdbb1da8a900"/>
                             <ATTRIBUTES>
-                              <ATT name="Name"><![CDATA[manage]]></ATT>
+                              <ATT name="Name"><![CDATA[supply]]></ATT>
                               <ATT name="status">1970354901745664</ATT>
                             </ATTRIBUTES>
                             <DEPENDENCIES>
@@ -255,7 +325,7 @@
                         </COMP>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="provider" mc="Standard.BindableInstance" uid="af0a4569-ec93-4d6a-842f-2837581ea725"/>
+                            <ID name="consumer" mc="Standard.BindableInstance" uid="af0a4569-ec93-4d6a-842f-2837581ea725"/>
                           </REFOBJ>
                         </LINK>
                         <COMP relation="Opposite">
@@ -271,7 +341,7 @@
                             </ATTRIBUTES>
                             <DEPENDENCIES>
                               <COMP relation="Link">
-                                <COMPID name="manage" mc="Standard.Link" uid="2f2597f8-0a18-412a-8479-cdbb1da8a900"/>
+                                <COMPID name="supply" mc="Standard.Link" uid="2f2597f8-0a18-412a-8479-cdbb1da8a900"/>
                               </COMP>
                               <COMP relation="Opposite">
                                 <COMPID name="" mc="Standard.LinkEnd" uid="778bdbcf-f191-4956-9901-b11af9fa9358"/>
@@ -283,23 +353,23 @@
                     </OBJECT>
                   </COMP>
                   <LINK relation="Base">
-                    <ID name="ArchiveManagerCaller" mc="Standard.Interface" uid="ad86f013-bd11-4639-bdc4-4f8ac854b553"/>
+                    <ID name="ArchiveReceiver" mc="Standard.Interface" uid="ad86f013-bd11-4639-bdc4-4f8ac854b553"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="provider" mc="Standard.BindableInstance" uid="af0a4569-ec93-4d6a-842f-2837581ea725"/>
+                <ID name="consumer" mc="Standard.BindableInstance" uid="af0a4569-ec93-4d6a-842f-2837581ea725"/>
                 <ATTRIBUTES>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                   <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                   <ATT name="Value"></ATT>
-                  <ATT name="Name"><![CDATA[provider]]></ATT>
+                  <ATT name="Name"><![CDATA[consumer]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="ArchiveManager" mc="Standard.Interface" uid="e2d50681-c6f6-4b8f-ba0d-8de5a17ec548"/>
+                    <ID name="ArchiveSupplier" mc="Standard.Interface" uid="e2d50681-c6f6-4b8f-ba0d-8de5a17ec548"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -402,7 +472,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="ArchiveViewManager" mc="Standard.Interface" uid="f39377f1-8bec-48b5-8711-bc60ab431f18"/>
+                    <ID name="ArchiveViewer" mc="Standard.Interface" uid="f39377f1-8bec-48b5-8711-bc60ab431f18"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -482,6 +552,118 @@
         </OBJECT>
         <COMPID name="Package" mc="Standard.Package" uid="756eb18c-9829-40c5-ba89-23b2c1f73c7a"/>
         <COMPID name="File" mc="Standard.DataType" uid="fd094c28-9825-4d1f-abf5-ba9b0196c06c"/>
+        <COMPID name="Archivist" mc="Standard.Class" uid="9d4c9bcf-ee36-49af-a88e-ebd725466c9b"/>
+        <OBJECT>
+          <ID name="Manage Archive" mc="Standard.Collaboration" uid="68b17a72-b611-4d75-821c-856779ef46da"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Manage Archive]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="manager" mc="Standard.BindableInstance" uid="e3dbeb89-6ba3-43fc-8552-6653ac6d18cf"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">true</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[manager]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="ArchiveManager" mc="Standard.Interface" uid="2505552f-1cf9-4bdd-bc4e-154f4e830154"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="consumer" mc="Standard.BindableInstance" uid="d11099f4-8fa2-45aa-9b46-460ec7cf2213"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[consumer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedEnd">
+                    <OBJECT>
+                      <ID name="" mc="Standard.LinkEnd" uid="c2426ac2-a2c8-4105-9c3b-87709fa29a2b"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="manage" mc="Standard.Link" uid="81672193-137e-4728-b43c-6e1088d66d45"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"><![CDATA[manage]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Extension">
+                                <FOREIGNID name="ServiceChannel" mc="Standard.Stereotype" uid="01ec25d4-0000-16c8-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="manager" mc="Standard.BindableInstance" uid="e3dbeb89-6ba3-43fc-8552-6653ac6d18cf"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="ServiceChannel" mc="Standard.LinkEnd" uid="db073a28-780a-46cb-a7dc-d3140d189eb9"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"><![CDATA[ServiceChannel]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <COMPID name="manage" mc="Standard.Link" uid="81672193-137e-4728-b43c-6e1088d66d45"/>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="" mc="Standard.LinkEnd" uid="c2426ac2-a2c8-4105-9c3b-87709fa29a2b"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Base">
+                    <ID name="ArchiveManagement" mc="Standard.Interface" uid="40fe33f6-6cce-4b25-addd-c4e34b9b7c4f"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="ServiceContract" mc="Standard.Stereotype" uid="01ec25d4-0000-16cd-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="ArchiveManager" mc="Standard.Interface" uid="2505552f-1cf9-4bdd-bc4e-154f4e830154"/>
+        <COMPID name="ArchiveManagement" mc="Standard.Interface" uid="40fe33f6-6cce-4b25-addd-c4e34b9b7c4f"/>
+        <COMPID name="ArchiveManagerService" mc="Standard.Class" uid="a6d02c5b-b689-48d6-a0ee-dded3ab816e4"/>
+        <COMPID name="ArchiveManagerService1" mc="Standard.Class" uid="c188a5c9-d4c8-4b01-84f9-dfbc8b8d7f15"/>
+        <COMPID name="~ArchiveManagerService" mc="Standard.Class" uid="25617abe-8f23-4451-a62f-9b72f66b36bf"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="overview diagram" mc="Standard.ClassDiagram" uid="9ca2fb78-5b75-44ed-990b-cc2fdfc5a271"/>

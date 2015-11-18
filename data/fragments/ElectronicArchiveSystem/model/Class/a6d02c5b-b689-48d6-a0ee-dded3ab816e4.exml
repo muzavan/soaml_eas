@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ArchiveSupplierInterface" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ArchiveManagerService" version="4">
   <OBJECT>
-    <ID name="ArchiveSupplierInterface" mc="Standard.Class" uid="508b3f4b-1409-4abd-8ec9-d4296f0a71c4"/>
+    <ID name="ArchiveManagerService" mc="Standard.Class" uid="a6d02c5b-b689-48d6-a0ee-dded3ab816e4"/>
     <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,20 +11,32 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[ArchiveSupplierInterface]]></ATT>
+      <ATT name="Name"><![CDATA[ArchiveManagerService]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Realized">
         <OBJECT>
-          <ID name="InterfaceRealization" mc="Standard.InterfaceRealization" uid="63e9356e-a626-4aff-9ad0-06027c9cd83b"/>
+          <ID name="" mc="Standard.InterfaceRealization" uid="fcf733e1-5cdf-496e-9e43-aabeb520d6aa"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Implemented">
+              <ID name="ArchiveManager" mc="Standard.Interface" uid="2505552f-1cf9-4bdd-bc4e-154f4e830154"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InterfaceRealization" mc="Standard.InterfaceRealization" uid="63aac9dd-3504-46b7-9983-bc58f0b3d8b9"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[InterfaceRealization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Implemented">
-              <ID name="ArchiveReceiver" mc="Standard.Interface" uid="ad86f013-bd11-4639-bdc4-4f8ac854b553"/>
+              <ID name="ArchiveManagement" mc="Standard.Interface" uid="40fe33f6-6cce-4b25-addd-c4e34b9b7c4f"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -34,7 +46,7 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Standard.Usage" uid="cef3e11e-484f-4d03-ab29-f055282008c6"/>
+          <ID name="" mc="Standard.Usage" uid="9c74d315-b8d7-4a62-8584-56aac793c8c8"/>
           <ATTRIBUTES>
             <ATT name="DependsOnId"></ATT>
             <ATT name="DependsOnName"></ATT>
@@ -43,7 +55,9 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="ArchiveSupplier" mc="Standard.Interface" uid="e2d50681-c6f6-4b8f-ba0d-8de5a17ec548"/>
+              <REFOBJ>
+                <ID name="update" mc="Standard.Operation" uid="cc029b78-9b03-44b8-9fca-b8350e22bb24"/>
+              </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

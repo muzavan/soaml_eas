@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Archivist" version="4">
+  <OBJECT>
+    <ID name="Archivist" mc="Standard.Class" uid="9d4c9bcf-ee36-49af-a88e-ebd725466c9b"/>
+    <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Archivist]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Participant" mc="Standard.Stereotype" uid="01ec25d4-0000-169e-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Standard.Note" uid="6099345d-e161-4d34-8c17-4aff31bd6452"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Archivist adalah yang mengorganisir arsip, termasuk proses merapikan arsip.
+
+
+]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/html]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
