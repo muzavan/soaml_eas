@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Archive Manager Service Interface diagram" version="4">
+  <OBJECT>
+    <ID name="Archive Manager Service Interface diagram" mc="Standard.StaticDiagram" uid="4d4d75d1-0f95-45f5-9c70-9ed12c05771e"/>
+    <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">137</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Archive Manager Service Interface diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="ServiceInterfaceDiagram" mc="Standard.Stereotype" uid="c54c1089-51fa-11df-beb4-0014224f9977"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="6c107af8-c4c7-4022-affa-057560fa38b7"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The Service Interface diagram is dedicated to model Service Interfaces, Providers, Consumers and their relationships]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

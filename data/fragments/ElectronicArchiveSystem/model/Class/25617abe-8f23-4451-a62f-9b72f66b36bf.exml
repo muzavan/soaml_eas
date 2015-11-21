@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="Realized">
         <OBJECT>
-          <ID name="InterfaceRealization" mc="Standard.InterfaceRealization" uid="1af8bc20-a1ba-4b33-b29d-05caa7f8e934"/>
+          <ID name="InterfaceRealization" mc="Standard.InterfaceRealization" uid="f4c3148e-d763-454e-9c41-b5b1100aad15"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[InterfaceRealization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -34,35 +34,7 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Standard.Usage" uid="fa50dc95-0d30-483a-a663-5541b35f3df0"/>
-          <ATTRIBUTES>
-            <ATT name="DependsOnId"></ATT>
-            <ATT name="DependsOnName"></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="ArchiveManager" mc="Standard.Interface" uid="2505552f-1cf9-4bdd-bc4e-154f4e830154"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="Standard.Usage" uid="a89fa8fa-aff0-44f5-b5c6-6154eb8b11bd"/>
-          <ATTRIBUTES>
-            <ATT name="DependsOnId"></ATT>
-            <ATT name="DependsOnName"></ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="ArchiveManagement" mc="Standard.Interface" uid="40fe33f6-6cce-4b25-addd-c4e34b9b7c4f"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.Usage" uid="901f9861-2f84-44cc-b68a-fb851dfc42b3"/>
           <ATTRIBUTES>
             <ATT name="DependsOnId"></ATT>
             <ATT name="DependsOnName"></ATT>

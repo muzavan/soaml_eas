@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supply Archive Service Contract diagram" version="4">
+  <OBJECT>
+    <ID name="Supply Archive Service Contract diagram" mc="Standard.StaticDiagram" uid="e9599e5e-03da-4741-b3c4-01ac57c1b9e0"/>
+    <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">249</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Supply Archive Service Contract diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="ServiceContractDiagram" mc="Standard.Stereotype" uid="0208014c-0000-3501-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="fb12fde6-a946-470f-adad-4f2ec5bb3aa8"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The Service Contract diagram is dedicated to service contract modeling.]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Archive Supplier Service Interface diagram" version="4">
+  <OBJECT>
+    <ID name="Archive Supplier Service Interface diagram" mc="Standard.StaticDiagram" uid="87e07c0e-a734-42dd-bb2c-40d3acf30d1c"/>
+    <PID name="electronicarchivesystem" mc="Standard.Package" uid="99084d5d-d373-4932-9f7c-8391f72426d2"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">287</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[Archive Supplier Service Interface diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="ServiceInterfaceDiagram" mc="Standard.Stereotype" uid="c54c1089-51fa-11df-beb4-0014224f9977"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="7af892b3-5848-4cfd-933f-6fb11822049f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The Service Interface diagram is dedicated to model Service Interfaces, Providers, Consumers and their relationships]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
